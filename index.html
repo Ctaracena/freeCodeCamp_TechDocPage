@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>freeCodeCamp - Technical Documentation</title>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header>Lorem ipsum dolor sit amet adipisicing elit.</header>
+            <a href="#common_templates" class="nav-link">Common Templates</a>
+            <a href="#acceptance_criteria" class="nav-link">Acceptance criteria</a>
+            <a href="#Some_limitations" class="nav-link">Some Limitations</a>
+            <a href="#Declaring_variables" class="nav-link">Declaring variables</a>
+            <a href="#While_statement" class="nav-link">While statement</a>
+            <a href="#User_journey_Map" class="nav-link">User journey Map</a>
+        </nav>
+        <section class="main-section" id="common_templates">
+            <header>Common Templates</header>
+            <p>User stories may follow one of several formats or templates.</p>
+            <p>The most common is the Connextra template, stated below. Mike Cohn suggested the "so that" clause is optional although still often helpful.</p>
+            <code>
+                function greetMe(yourName) { alert("Hello " + yourName); }
+                greetMe("World");
+            </code>
+        </section>
+
+        <section class="main-section" id="acceptance_criteria">
+            <header>Acceptance criteria</header>
+            <p>Mike Cohn defines acceptance criteria as "notes about what the story must do in order for the product owner to accept it as complete." They define the boundaries of a user story and are used to confirm when a story is completed and working as intended.</p>
+            <p>The appropriate amount of information to be included in the acceptance criteria varies by team, program and project. Some may include 'predecessor criteria', "The user has already logged in and has already edited his information once".</p>
+        </section>
+
+        <section class="main-section" id="Some_limitations">
+            <header>Some Limitations</header>
+                <ul>
+                    <li><strong>Scale-up problem:</strong> User stories written on small physical cards are hard to maintain, difficult to scale to large projects and troublesome for geographically distributed teams.</li>
+                    <li><strong>Vague, informal and incomplete:</strong>User story cards are regarded as conversation starters. Being informal, they are open to many interpretations. Being brief, they do not state all of the details necessary to implement a feature. Stories are therefore inappropriate for reaching formal agreements or writing legal contracts.</li>
+                    <li><strong>Lack of non-functional requirements</strong>User stories rarely include performance or non-functional requirement details, so non-functional tests (e.g. response time) may be overlooked.</li>
+                    <li><strong>Don't necessarily represent how technology has to be built:</strong>Since user stories are often written from the business perspective, once a technical team begins to implement it may find that technical constraints require effort which may be broader than the scope of an individual story. Sometimes splitting stories into smaller ones can help resolve this. Other times, 'technical-only' stories are most appropriate. These 'technical-only' stories may be challenged by the business stakeholders as not delivering value which can be demonstrated to a customer/stakeholders.</li>
+                    <li><strong>Principle</strong>User stories are written by or for users or customers to influence the functionality of the system being developed. In some teams, the product manager (or product owner in Scrum), is primarily responsible for formulating user stories and organizing them into a product backlog. In other teams, anyone can write a user story.</li>
+                </ul>
+        </section>
+
+        <section class="main-section" id="Declaring_variables">
+            <header>Declaring variables</header>
+            <p>You can declare a variable in three ways:</p>
+            <p>With the keyword var. For example,</p>
+            <code>
+                var x = 42.
+            </code>
+            <p>This syntax can be used to declare both local and global variables.</p>
+            <p>By simply assigning it a value. For example,</p>
+            <code>
+                x = 42.
+            </code>
+            <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
+            <p>With the keyword let. For example,</p>
+            <code>
+                let y = 13.
+            </code>
+            <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
+        </section>
+
+        <section class="main-section" id="While_statement">
+            <header>while statement</header>
+            <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
+            <code>
+                while (condition) statement
+            </code>
+        </section>
+        <section class="main-section" id="User_journey_Map">
+            <header>User journey Map</header>
+            <p>A user journey map intends to show the big picture but for a single user category. Its narrative line focuses on the chronology of phases and actions that a single user has to perform in order to achieve his or her objectives.</p>
+            <p>This allows to map the user experience beyond a set of user stories. Based on user feedback, the positive and negative emotions can be identified across the journey. Points of friction or unfulfilled needs can be identified on the map. This technique is used to improve the design of a product, allowing to engage users in participatory approaches.</p>
+        </section>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
